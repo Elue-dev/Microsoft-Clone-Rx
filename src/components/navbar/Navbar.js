@@ -12,10 +12,9 @@ export class Navbar extends Component {
         return (
             <div className='navbar'>
                 <div className='flex'>
-
                     <div className='nav-left'>
                         <div className='logo'>
-                            <Link to='/'><img src='micrologoo.png'/></Link>
+                                <Link to='/'><img src='micrologoo.png'/></Link>
                         </div>
                         <ul>
                             <li><Link to='/'>Microsoft 365</Link></li>
@@ -23,14 +22,17 @@ export class Navbar extends Component {
                             <li><Link to='/'>Windows</Link></li>
                             <li><Link to='/'>Xbox</Link></li>
                             <li><Link to='/'>Support</Link></li>
+                            <li id='drop' onClick={this.handleDropdown}><Link to='/'>All Microsoft<i className="fas fa-angle-down"></i></Link></li>
                         </ul>
                     </div>
 
                     <div className='nav-right'>
-                        <li id='drop' onClick={this.handleDropdown}><Link to='/'>All Microsoft<i className="fas fa-angle-down"></i></Link></li>
-                        <Link to ='/'><i className="fas fa-search"></i></Link>
-                        <Link to ='/'><i className="fas fa-shopping-cart"></i></Link>
-                        <Link to ='/'><i className="far fa-user-circle"></i></Link>
+
+                        <div>
+                            <Link to ='/'><i className="fas fa-search"></i></Link>
+                            <Link to ='/'><i className="fas fa-shopping-cart"></i></Link>
+                            <Link to ='/'><i className="far fa-user-circle"></i></Link>
+                        </div>
                     </div>
                 </div>
                 <div className='nav-dropdown'>

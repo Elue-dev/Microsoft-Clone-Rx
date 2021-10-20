@@ -67,6 +67,11 @@
   cursor: pointer;
 }
 
+.showcase .showcase-text .pc h5 .fa-greater-than {
+  font-size: .8rem;
+  margin-left: .5rem;
+}
+
 .showcase .showcase-text .pc h5:hover {
   border-bottom: 2px solid #000;
   word-spacing: .1rem;

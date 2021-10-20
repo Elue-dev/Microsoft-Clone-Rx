@@ -2,7 +2,7 @@
   max-width: 1400px;
   margin: auto;
   width: 90%;
-  margin-top: 4rem;
+  margin-top: 3rem;
   line-height: 3;
 }
 
@@ -16,5 +16,20 @@
 
 .offers .offers-grid p {
   line-height: 1.5;
+}
+
+.offers .offers-grid a {
+  color: #0067b8;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.offers .offers-grid a:hover {
+  text-decoration: underline;
+  word-spacing: .1rem;
+}
+
+.offers .offers-grid .fa-greater-than {
+  font-size: .7rem;
 }
 /*# sourceMappingURL=Offers.css.map */

@@ -52,6 +52,10 @@
                     font-size: 1.1rem;
                     h5{
                         cursor: pointer;
+                        .fa-greater-than{
+                            font-size: .8rem;
+                            margin-left: .5rem;
+                        }
                         &:hover{
                             border-bottom: 2px solid #000;
                             word-spacing: .1rem;

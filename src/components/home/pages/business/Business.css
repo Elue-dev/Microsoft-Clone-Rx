@@ -1,1 +1,35 @@
-/* No CSS *//*# sourceMappingURL=Business.css.map */
+.business {
+  max-width: 1400px;
+  margin: auto;
+  width: 90%;
+  margin-top: 3rem;
+  line-height: 3;
+}
+
+.business .business-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.business .business-grid p {
+  line-height: 1.5;
+}
+
+.business .business-grid a {
+  color: #0067b8;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.business .business-grid a:hover {
+  text-decoration: underline;
+  word-spacing: .1rem;
+}
+
+.business .business-grid .fa-greater-than {
+  font-size: .7rem;
+}
+/*# sourceMappingURL=Business.css.map */

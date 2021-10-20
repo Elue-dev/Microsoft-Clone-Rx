@@ -1,0 +1,24 @@
+@import '../../../global\ styles/mixins';
+
+.business{
+    @include wrapper();
+    margin-top: 3rem;
+    line-height: 3;
+    .business-grid{
+        @include grid(repeat(4,1fr), 1rem);
+        p{
+            line-height: 1.5;
+        }
+        a{
+            color:#0067b8;
+            transition: .2s ease;
+            &:hover{
+                text-decoration: underline;
+                word-spacing: .1rem;
+            }
+        }
+        .fa-greater-than{
+            font-size: .7rem;
+        }
+    }
+}
