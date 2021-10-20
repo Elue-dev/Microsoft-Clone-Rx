@@ -1,0 +1,18 @@
+@mixin grid($tempCol, $gap){
+    display: grid;
+    grid-template-columns: $tempCol;
+    gap: $gap;
+}
+
+@mixin flexBox($justify, $direction){
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin wrapper(){
+    max-width: 1400px;
+    margin: auto;
+    width: 90%;
+}

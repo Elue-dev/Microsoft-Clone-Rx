@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,OAAO,CAAA;ECYH,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,GAAG;EDZV,UAAU,EAAE,IAAI;EAChB,WAAW,EAAE,CAAC;CAOjB;;AAVD,AAII,OAJG,CAIH,YAAY,CAAA;ECLZ,OAAO,EAAE,IAAI;EACb,qBAAqB,EDKH,cAAa;ECJ/B,GAAG,EDI8B,IAAI;CAIpC;;AATL,AAMQ,OAND,CAIH,YAAY,CAER,CAAC,CAAA;EACG,WAAW,EAAE,GAAG;CACnB",
+    "sources": [
+        "Offers.scss",
+        "../../../global styles/mixins.scss"
+    ],
+    "names": [],
+    "file": "Offers.css"
+}

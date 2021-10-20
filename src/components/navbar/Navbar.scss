@@ -1,0 +1,90 @@
+@import '../global\ styles/mixins';
+
+.navbar{
+    @include wrapper();
+    .flex{
+        @include flexBox(space-between, row);
+        padding: 0 .7rem;
+        padding-top: 1rem;
+        .nav-left{
+            @include flexBox(space-between, row);
+            .logo{
+                img{
+                    width: 7.5rem;
+                    @include flexBox(center, column);
+                }
+            }
+            ul{
+                margin-left: 2rem;
+               li{
+                   display: inline-block;
+                   margin-right: .6rem;
+                   &:hover{
+                       border-bottom: 2px solid #262626;
+                   }
+                   a{
+                       font-size: .85rem;
+                       &:focus{
+                        border: 1px dashed #262626;
+                        padding: .6rem
+                    }
+                   }
+               }
+            }
+        }
+        .nav-right{
+            @include flexBox(center, row);
+            :first-child{
+                margin-right: 1rem;
+                font-size: .9rem;
+                &:hover{
+                    border-bottom: 2px solid #000;
+                }
+                &:focus{
+                    border: 1px dashed #262626;
+                    padding: .6rem;
+                    background: #f2f2f2;
+                }
+            }
+            i{
+                font-size: 1.2rem;
+            }
+            .fa-angle-down{
+                margin-left: .3rem;
+                &:hover{
+                    border-bottom: 0;
+                }
+            }
+            .fa-user-circle{
+                font-size: 1.6rem;
+            }
+        }
+    }
+    .nav-dropdown{
+        position: absolute;
+        z-index: 10;
+        background: #f2f2f2;
+        margin-top: .8rem;
+        border-bottom: 2px solid #000;
+        opacity: 0;
+        pointer-events: none;
+        transition: .1s ease-in;
+        .nav-wrapper{
+            @include grid(repeat(6,1fr), 1.5rem);
+            padding: 1rem 4rem;
+            line-height: 2.8;
+            font-size: .9rem;
+            .row1,.row2,.row3,.row4,.row5,.row6{
+                :first-child{
+                    font-weight: 600;
+                    padding-bottom: .9rem;
+                }
+            }
+        }
+    }
+
+    .active{
+        opacity: 1;
+        pointer-events: visible;
+    }
+}

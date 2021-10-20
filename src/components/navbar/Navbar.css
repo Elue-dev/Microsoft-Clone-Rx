@@ -1,0 +1,159 @@
+.navbar {
+  max-width: 1400px;
+  margin: auto;
+  width: 90%;
+}
+
+.navbar .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0 .7rem;
+  padding-top: 1rem;
+}
+
+.navbar .flex .nav-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navbar .flex .nav-left .logo img {
+  width: 7.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar .flex .nav-left ul {
+  margin-left: 2rem;
+}
+
+.navbar .flex .nav-left ul li {
+  display: inline-block;
+  margin-right: .6rem;
+}
+
+.navbar .flex .nav-left ul li:hover {
+  border-bottom: 2px solid #262626;
+}
+
+.navbar .flex .nav-left ul li a {
+  font-size: .85rem;
+}
+
+.navbar .flex .nav-left ul li a:focus {
+  border: 1px dashed #262626;
+  padding: .6rem;
+}
+
+.navbar .flex .nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navbar .flex .nav-right :first-child {
+  margin-right: 1rem;
+  font-size: .9rem;
+}
+
+.navbar .flex .nav-right :first-child:hover {
+  border-bottom: 2px solid #000;
+}
+
+.navbar .flex .nav-right :first-child:focus {
+  border: 1px dashed #262626;
+  padding: .6rem;
+  background: #f2f2f2;
+}
+
+.navbar .flex .nav-right i {
+  font-size: 1.2rem;
+}
+
+.navbar .flex .nav-right .fa-angle-down {
+  margin-left: .3rem;
+}
+
+.navbar .flex .nav-right .fa-angle-down:hover {
+  border-bottom: 0;
+}
+
+.navbar .flex .nav-right .fa-user-circle {
+  font-size: 1.6rem;
+}
+
+.navbar .nav-dropdown {
+  position: absolute;
+  z-index: 10;
+  background: #f2f2f2;
+  margin-top: .8rem;
+  border-bottom: 2px solid #000;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: .1s ease-in;
+  transition: .1s ease-in;
+}
+
+.navbar .nav-dropdown .nav-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem;
+  padding: 1rem 4rem;
+  line-height: 2.8;
+  font-size: .9rem;
+}
+
+.navbar .nav-dropdown .nav-wrapper .row1 :first-child, .navbar .nav-dropdown .nav-wrapper .row2 :first-child, .navbar .nav-dropdown .nav-wrapper .row3 :first-child, .navbar .nav-dropdown .nav-wrapper .row4 :first-child, .navbar .nav-dropdown .nav-wrapper .row5 :first-child, .navbar .nav-dropdown .nav-wrapper .row6 :first-child {
+  font-weight: 600;
+  padding-bottom: .9rem;
+}
+
+.navbar .active {
+  opacity: 1;
+  pointer-events: visible;
+}
+/*# sourceMappingURL=Navbar.css.map */

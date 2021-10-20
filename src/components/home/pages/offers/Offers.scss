@@ -1,0 +1,13 @@
+@import '../../../global\ styles/mixins';
+
+.offers{
+    @include wrapper();
+    margin-top: 4rem;
+    line-height: 3;
+    .offers-grid{
+        @include grid(repeat(4,1fr), 1rem);
+        p{
+            line-height: 1.5;
+        }
+    }
+}
