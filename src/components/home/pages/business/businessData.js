@@ -4,6 +4,7 @@ const businessData = [
         title: 'Get Microsoft Teams for free',
         text:  'Online meetings, chat, and up to 10 GB of shared cloud storage—all in one place.',
         link1: 'Sign up for free',
+        address: 'microsoft365',
     },
     {
         image: 'micro6.webp',

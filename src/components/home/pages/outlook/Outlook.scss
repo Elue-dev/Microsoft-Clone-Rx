@@ -50,3 +50,13 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .outlook .outlook-text {
+        transform: translate(-96%, -50%);
+    }
+    .outlook .outlook-text h2,
+    .outlook .outlook-text p{
+        color: #fff;
+    }
+}

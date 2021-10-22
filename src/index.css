@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+*{
+  overflow-x: hidden;
+}
+
 /* .wrapper{
   max-width: 1200px;
   margin: auto;

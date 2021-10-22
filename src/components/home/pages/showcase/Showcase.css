@@ -1,3 +1,7 @@
+h2, p {
+  color: #111;
+}
+
 .showcase {
   max-width: 1400px;
   margin: auto;
@@ -77,5 +81,18 @@
   word-spacing: .1rem;
   -webkit-transition: .3s ease;
   transition: .3s ease;
+}
+
+@media (max-width: 768px) {
+  .showcase {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 420px) {
+  .showcase .showcase-text p {
+    line-height: 1.5;
+    display: none;
+  }
 }
 /*# sourceMappingURL=Showcase.css.map */

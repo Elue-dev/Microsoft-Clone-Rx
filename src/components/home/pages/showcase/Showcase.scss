@@ -65,3 +65,16 @@
                 }
         }
 }
+
+@media (max-width: 768px){
+    .showcase{
+        height: 60vh;
+    }
+}
+
+@media (max-width: 420px){
+    .showcase .showcase-text p {
+        line-height: 1.5;
+        display: none;
+    }
+}

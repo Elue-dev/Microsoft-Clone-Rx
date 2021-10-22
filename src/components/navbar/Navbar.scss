@@ -88,3 +88,9 @@
         pointer-events: visible;
     }
 }
+
+@media (max-width: 768px){
+    .navbar .flex .nav-right {
+        display: none;
+    }
+}

@@ -22,12 +22,11 @@ export class Navbar extends Component {
                             <li><Link to='/'>Windows</Link></li>
                             <li><Link to='/'>Xbox</Link></li>
                             <li><Link to='/'>Support</Link></li>
-                            <li id='drop' onClick={this.handleDropdown}><Link to='/'>All Microsoft<i className="fas fa-angle-down"></i></Link></li>
                         </ul>
                     </div>
 
                     <div className='nav-right'>
-
+                        <li id='drop' onClick={this.handleDropdown}><Link to='/'>All Microsoft<i className="fas fa-angle-down"></i></Link></li>
                         <div>
                             <Link to ='/'><i className="fas fa-search"></i></Link>
                             <Link to ='/'><i className="fas fa-shopping-cart"></i></Link>

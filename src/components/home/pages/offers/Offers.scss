@@ -6,12 +6,19 @@
     line-height: 3;
     .offers-grid{
         @include grid(repeat(4,1fr), 1rem);
+        @include mQ(51.25rem){
+            @include grid(repeat(2,1fr), 1rem);
+        }
         p{
             line-height: 1.5;
         }
         a{
-            color:#0067b8;
+            color:#333;
+            text-decoration: none;
             transition: .2s ease;
+        }
+        .sublink{
+            color: #0067b8;
             &:hover{
                 text-decoration: underline;
                 word-spacing: .1rem;
@@ -22,3 +29,17 @@
         }
     }
 }
+
+@media (max-width: 768px){
+     .offers-grid .offer .image{
+        width: 100%;
+    }
+}
+
+@media (max-width: 420px){
+    .offers .offers-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+

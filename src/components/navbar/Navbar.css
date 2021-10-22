@@ -1,3 +1,7 @@
+h2, p {
+  color: #111;
+}
+
 .navbar {
   max-width: 1400px;
   margin: auto;
@@ -155,5 +159,11 @@
 .navbar .active {
   opacity: 1;
   pointer-events: visible;
+}
+
+@media (max-width: 768px) {
+  .navbar .flex .nav-right {
+    display: none;
+  }
 }
 /*# sourceMappingURL=Navbar.css.map */

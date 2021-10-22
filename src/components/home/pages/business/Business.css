@@ -1,3 +1,7 @@
+h2, p {
+  color: #111;
+}
+
 .business {
   max-width: 1400px;
   margin: auto;
@@ -12,6 +16,16 @@
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
+}
+
+@media (max-width: 51.25rem) {
+  .business .business-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
 }
 
 .business .business-grid p {
@@ -31,5 +45,27 @@
 
 .business .business-grid .fa-greater-than {
   font-size: .7rem;
+}
+
+@media (max-width: 768px) {
+  .business-grid .busines .image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .business .business-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .covid-text h1 {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  .covid-text p {
+    font-size: .9rem;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=Business.css.map */

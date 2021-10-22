@@ -47,3 +47,22 @@
         }
     }
 }
+
+
+@media (max-width: 820px){
+    .footer .footer-items .footer-col {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:3rem;
+    }
+}
+
+@media (max-width: 420px){
+    .footer .footer-items .footer-col {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .footer-items .footer-col2 {
+        grid-template-columns: 1fr;
+    }
+}

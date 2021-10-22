@@ -6,13 +6,15 @@ export class Business extends Component {
     render() {
         const businessList = this.props.data.map((data, i) => {
             return(
-                <div key= {i}>
-                    <img src= {data.image} />
-                    <h3> {data.title} </h3>
-                    <p> {data.text} </p>
-                    <div><Link to='/'> {data.link1} <i className="fas fa-greater-than"></i> </Link></div>
-                    <div><Link to='/'> {data.link2}  </Link></div>
-                </div>
+                <Link to={`/${data.address}`}>
+                    <div className='busines' key= {i}>
+                            <img className='image' src= {data.image} />
+                            <h3> {data.title} </h3>
+                            <p> {data.text} </p>
+                            <div><Link to='/'> {data.link1} <i className="fas fa-greater-than"></i> </Link></div>
+                            <div><Link to='/'> {data.link2}  </Link></div>
+                    </div>
+                </Link>
             )
         })
 

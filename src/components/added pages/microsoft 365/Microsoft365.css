@@ -1,0 +1,148 @@
+h2, p {
+  color: #111;
+}
+
+.micro365 .hero {
+  background: url("microback3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: auto;
+  height: 70vh;
+  margin-top: 1.5rem;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2.5rem;
+}
+
+.micro365 .hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -1;
+  opacity: .1;
+}
+
+.micro365 .hero .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-160%, -50%);
+          transform: translate(-160%, -50%);
+}
+
+.micro365 .hero .hero-text p {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #000;
+}
+
+.micro365 .box {
+  max-width: 1400px;
+  margin: auto;
+  width: 90%;
+  background-color: #fff;
+}
+
+.micro365 .box .box-items {
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: auto;
+      -ms-flex-align: auto;
+          align-items: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  align-items: auto;
+  gap: 9rem;
+}
+
+.micro365 .box .box-items .left h1 {
+  margin-bottom: 1rem;
+}
+
+.micro365 .box .box-items .left ul {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.micro365 .box .box-items .left ul li {
+  list-style: disc;
+  font-size: 1rem;
+}
+
+.micro365 .box .box-items .left p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.micro365 .box .box-items .right {
+  line-height: 2.5;
+}
+
+.micro365 .box .box-items .right button {
+  background: #0067b8;
+  color: #fff;
+  padding: .8rem 1.8rem;
+  border: 0;
+  outline: 0;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.micro365 .box .box-items .right button:focus {
+  outline: 2px solid #000;
+}
+
+.micro365 .box .box-items .right :nth-child(3) {
+  text-align: center;
+  position: relative;
+}
+
+.micro365 .box .box-items .right :nth-child(4) {
+  margin-bottom: 1rem;
+}
+
+.micro365 .box .box-items .right :last-child {
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .micro365 .hero .hero-text {
+    -webkit-transform: translate(-92%, -50%);
+            transform: translate(-92%, -50%);
+  }
+  .micro365 .box .box-items .right :nth-child(3) {
+    text-align: left;
+  }
+  .micro365 .box .box-items {
+    padding: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: auto;
+        -ms-flex-align: auto;
+            align-items: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    align-items: auto;
+    grid-gap: 9rem;
+    gap: 9rem;
+  }
+}
+/*# sourceMappingURL=Microsoft365.css.map */

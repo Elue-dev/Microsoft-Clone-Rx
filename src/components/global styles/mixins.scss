@@ -16,3 +16,14 @@
     margin: auto;
     width: 90%;
 }
+
+@mixin mQ($respond){
+    @media (max-width: $respond){
+        @content;
+    }
+}
+
+h2,p{
+    color: #111;
+}
+
